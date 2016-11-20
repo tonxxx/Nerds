@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo-main.png" width="" height="" alt="">
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="welcome"> <!-- НАВЕРНОЕ МОЖНО БЫЛО В ХЭДЕР-->
+        <h1 class="welcome-title">Добро пожаловать в магазин готовых макетов</h1>
+      </section>
+      <section class="shop"> <!-- нужно ли оно тут?-->
+        <section class="shop-parameters">
+          <form action="" method="post">
+          <p class="shop-parameters-name">Стоимость:</p>
+          <input type="range" name="price-range" min="0" max="1500"> <!-- https://leaverou.github.io/multirange/ наверное -->
+          <label>От <input type="text" name="price-from" value="0"></label>
+          <label>До <input type="text" name="price-from" value="1500"></label>
+          <p class="shop-parameters-type">Сетка:</p>
+          <input type="radio" name="type" value="responsive" checked> Адаптивная<br>
+          <input type="radio" name="type" value="fixed"> Фиксированная<br>
+          <input type="radio" name="type" value="adaptive"> Резиновая
+          <p class="shop-parameters-features">Особенности:</p>
+          <input type="checkbox" name="feature1" value="slider" checked>Слайдер<br>
+          <input type="checkbox" name="feature2" value="features_list">Блок преимуществ<br>
+          <input type="checkbox" name="feature3" value="news" checked>Новости<br>
+          <input type="checkbox" name="feature4" value="gallery">Галерея<br>
+          <input type="checkbox" name="feature5" value="cart">Корзина<br>
+          <button type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="shop-results">
+          <div class="shop-results-sort">
+            <p class="shop-results-text">Сортировать:</p>
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+            </ul>
+            <a class="shop-results-sort desc" href="#"></a>
+            <a class="shop-results-sort asc" href="#"></a>
+          </div>
+          <div class="shop-results-images">
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details"></div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details">
+               <b class="shop-results-images-item-details-name">Sunset</b>
+               <p>Интернет-магазин с личным кабинетом</p>
+               <a class="shop-results-images-item-details-price" href="#">10000 Р.</a>
+             </div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details"></div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details"></div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details"></div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item-details"></div>
+           </div>                                                      
+          </div>
+          <div class="shop-results-pages">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
+          </div>
+        </section>
+      </section>
+      <section class="map"> <!-- МОЖНО БЫЛО В ФУТЕР -->
+        <div class="map-contacts">
+          <b class="map-contacts-firm">Nёrds design studio</b>
+          <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
+          
+          тел. +7 (812) 275-75-75</p>
+          <a class="map-contacts-btn">Напишите нам</a>
+        </div>
+        <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-social">
+          <a class="footer-social-btn vk" href="#"></a>
+          <a class="footer-social-btn fb" href="#"></a>
+          <a class="footer-social-btn ig" href="#"></a>
+        </div>
+        <div class="footer-text">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
