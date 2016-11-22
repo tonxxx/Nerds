@@ -8,7 +8,7 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="img/logo-main.png" width="" height="" alt="">
+          <img src="img/logo-menu.png" width="139" height="56" alt="">
         </div>
         <nav class="main-nav">
           <ul>
@@ -38,20 +38,27 @@
       <section class="shop"> <!-- нужно ли оно тут?-->
         <section class="shop-parameters">
           <form action="" method="post">
-          <p class="shop-parameters-name">Стоимость:</p>
-          <input type="range" name="price-range" min="0" max="1500"> <!-- https://leaverou.github.io/multirange/ наверное -->
-          <label>От <input type="text" name="price-from" value="0"></label>
-          <label>До <input type="text" name="price-from" value="1500"></label>
-          <p class="shop-parameters-type">Сетка:</p>
-          <input type="radio" name="type" value="responsive" checked> Адаптивная<br>
-          <input type="radio" name="type" value="fixed"> Фиксированная<br>
-          <input type="radio" name="type" value="adaptive"> Резиновая
-          <p class="shop-parameters-features">Особенности:</p>
-          <input type="checkbox" name="feature1" value="slider" checked>Слайдер<br>
-          <input type="checkbox" name="feature2" value="features_list">Блок преимуществ<br>
-          <input type="checkbox" name="feature3" value="news" checked>Новости<br>
-          <input type="checkbox" name="feature4" value="gallery">Галерея<br>
-          <input type="checkbox" name="feature5" value="cart">Корзина<br>
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <p class="shop-parameters-name"></p>
+            <div class="price-range_double"></div> <!-- говорят что проще всего это сделать DIV а там типа уже фронтэндер пусть морочится и делает двойной пойнтер етц!! RANGE НЕ СТИЛИЗУЕТСЯ ПОЭТОМУ НАМНОГО ПРОЩЕ СДЕЛАТЬ ПОКА ВВОД ТОЛЬКО ИНПУТОМ!!! но можно искать и чото врубать типа https://leaverou.github.io/multirange/ наверное -->
+            <label>От <input type="text" name="price-from" value="0"></label> - 
+            <label>До <input type="text" name="price-from" value="1500"></label>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <input type="radio" name="type" value="responsive" checked> Адаптивная<br> <!-- LABEL СЮДА НАДА!!! -->
+              <input type="radio" name="type" value="fixed"> Фиксированная<br>
+              <input type="radio" name="type" value="adaptive"> Резиновая
+            </fieldset>
+            <fieldset>
+            <legend>Особенности:</legend>
+              <input type="checkbox" name="feature1" value="slider" checked>Слайдер<br>
+              <input type="checkbox" name="feature2" value="features_list">Блок преимуществ<br>
+              <input type="checkbox" name="feature3" value="news" checked>Новости<br>
+              <input type="checkbox" name="feature4" value="gallery">Галерея<br>
+              <input type="checkbox" name="feature5" value="cart">Корзина<br>
+            </fieldset>
           <button type="submit">Показать</button>
           </form>
         </section>
