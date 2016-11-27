@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;  
+}
+
+.logo {
+  float: left;
+}
+
+.main-nav {
+  float: right
+}
+
+.slider {
+  padding-bottom: 70px;
+}
+
+.slider-text {
+  float: left;
+  width: 400px;
+}
+
+.slider-nav {
+  float: left;
+  width: 80px;
+}
+
+.slider-image {
+  float: left;
+}
+
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.features-item {
+  float: left;
+  width: 293px;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.about-left {
+  float: left;
+  width: 620px;
+}
+
+.about-right {
+  float: left;
+  width: 260px;
+}
+
+.clients {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  margin-bottom: 90px;
+}
+
+.client {
+  float: left;
+  min-height: 95px;
+}
+
+.client1 {
+  width: 320px;
+  background: white url("img/client1_inactive.png") no-repeat;
+}
+
+.client2 {
+  width: 320px;
+  background: white url("img/client2_inactive.png") no-repeat;
+}
+
+.client3 {
+  width: 250px;
+  background: white url("img/client3_inactive.png") no-repeat;
+}
+
+.welcome {
+  padding-bottom: 80px;
+}
+
+.shop-parameters {
+  float: left;
+  width: 310px;
+}
+
+.shop-results {
+  float: left;
+  width: 580px;
+}
+
+.shop-results-images-item {
+  float: left;
+  width: 240px;
+  min-height: 270px;
+}
+
+.shop-results-images-item-details {
+  visibility: hidden;
+  margin: 50px 20px 20px 20px;
+  width: 200px;
+  height: 200px;
+  background: white;
+}
+
+.highlighted_res {
+  visibility: visible;
+}
+
+.shop-results-pages {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.map {
+  background: gray;
+  min-height: 415px;
+}
+
+.map-contacts {
+  float: left;
+  width: 250px;
+  min-height: 240px;
+  margin-top: 90px;
+  padding: 20px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.map-pointer {
+  float: right;
+  width: 231px;
+  height: 190px;
+  margin-right: 135px;
+  margin-top: 110px;
+  background: url("img/map-pointer.png") no-repeat;
+}
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-social {
+  float: left;
+  width: 320px;
+  min-height: 72px;
+}
+
+.footer-text {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           <img src="img/logo-menu.png" width="139" height="56" alt="">
         </div>
@@ -35,7 +36,7 @@
       <section class="welcome"> <!-- НАВЕРНОЕ МОЖНО БЫЛО В ХЭДЕР-->
         <h1 class="welcome-title">Добро пожаловать в магазин готовых макетов</h1>
       </section>
-      <section class="shop"> <!-- нужно ли оно тут?-->
+      <section class="shop clearfix"> <!-- нужно!!!-->
         <section class="shop-parameters">
           <form action="" method="post">
           <fieldset>
@@ -73,12 +74,12 @@
             <a class="shop-results-sort desc" href="#"></a>
             <a class="shop-results-sort asc" href="#"></a>
           </div>
-          <div class="shop-results-images">
+          <div class="shop-results-images clearfix">
            <div class="shop-results-images-item">
              <div class="shop-results-images-item-details"></div>
            </div>
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details">
+             <div class="shop-results-images-item-details highlighted_res">
                <b class="shop-results-images-item-details-name">Sunset</b>
                <p>Интернет-магазин с личным кабинетом</p>
                <a class="shop-results-images-item-details-price" href="#">10000 Р.</a>
@@ -105,18 +106,20 @@
           </div>
         </section>
       </section>
-      <section class="map"> <!-- МОЖНО БЫЛО В ФУТЕР -->
-        <div class="map-contacts">
-          <b class="map-contacts-firm">Nёrds design studio</b>
-          <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
-          
-          тел. +7 (812) 275-75-75</p>
-          <a class="map-contacts-btn">Напишите нам</a>
-        </div>
-        <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
-      </section>
     </main>
     <footer>
+      <section class="map clearfix">
+        <div class="container">
+          <div class="map-contacts">
+            <b class="map-contacts-firm">Nёrds design studio</b>
+            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
+          
+          тел. +7 (812) 275-75-75</p>
+            <a class="map-contacts-btn">Напишите нам</a>
+          </div>
+          <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
+        </div>
+      </section>        
       <div class="container">
         <div class="footer-social">
           <a class="footer-social-btn vk" href="#"></a>

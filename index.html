@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           <img src="img/logo-menu.png" width="139" height="56" alt="">
         </div>
@@ -32,7 +33,7 @@
       </div>
     </header>
     <main class="container">
-      <section class="slider">
+      <section class="slider clearfix">
         <div class="slider-text">
           <h1 class="slider-text-title">Долго, дорого, скрупулезно.</h1>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -47,7 +48,7 @@
         </div>
         <div class="slider-image"></div>
       </section>
-      <section class="features">
+      <section class="features clearfix">
         <div class="features-item">
           <b class="features-item-name">Веб-сайты</b> <!-- ЭТО ЛУЧШЕ ВСЕГО СДЕЛАТЬ H2!!!! -->
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -61,10 +62,10 @@
         <div class="features-item">
           <b class="features-item-name">Презентации</b>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="features-item-btn yellow">Заказать</a> <!-- PROBABLY BETTER START "BTB features.... !!!" -->
+          <a class="features-item-btn yellow">Заказать</a> <!-- PROBABLY BETTER START NAME LIKE "BTN features.... !!!" -->
         </div>
       </section>
-      <section class="about">
+      <section class="about clearfix">
         <div class="about-left">
           <h2 class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2> <!-- А ВОТ ТУТ ВООБЩЕ p>b лучше всего ТАК!!! -->
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
@@ -85,20 +86,26 @@
           </ul>
         </div>        
       </section>
-      <section class="clients"></section>
-      <section class="map">
-        <div class="map-contacts">
-          <b class="map-contacts-firm">Nёrds design studio</b>
-          <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
+      <section class="clients clearfix">
+        <div class="client client1"></div>
+        <div class="client client2"></div>
+        <div class="client client3"></div>  
+      </section>
+      </main>
+    <footer>
+      <section class="map clearfix">
+        <div class="container">
+          <div class="map-contacts">
+            <b class="map-contacts-firm">Nёrds design studio</b>
+            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
           
           тел. +7 (812) 275-75-75</p>
-          <a class="map-contacts-btn">Напишите нам</a>
+            <a class="map-contacts-btn">Напишите нам</a>
+          </div>
+          <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
         </div>
-        <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
-      </section>
-    </main>
-    <footer>
-      <div class="container">
+      </section>     
+      <div class="container clearfix">
         <div class="footer-social">
           <a class="footer-social-btn vk" href="#"></a>
           <a class="footer-social-btn fb" href="#"></a>
