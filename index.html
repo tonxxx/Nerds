@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -32,42 +34,46 @@
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
       <section class="slider clearfix">
-        <div class="slider-text">
-          <h1 class="slider-text-title">Долго, дорого, скрупулезно.</h1>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="slider-text-btn">Узнать больше</a>
-        </div>
-        <div class="slider-nav">
-          <ul>
-            <li></li> <!-- HOW TO MAKE IT BETTER??? -->
-            <li></li>
-            <li></li>
-          </ul>
+        <div class="container">
+          <div class="slider-text">
+            <h1 class="slider-text-title">Долго, дорого, скрупулезно.</h1>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="btn slider-more" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-nav">
+            <ul>
+              <li><input type="radio" name="page" id="page1" checked><label for="page1"></label></li><!-- HOW TO MAKE IT CHANGE DAMN BACKGROUND FROM HERE??? -->
+              <li><input type="radio" name="page" id="page2"><label for="page2"></label></li>
+              <li><input type="radio" name="page" id="page3"><label for="page3"></label></li>
+            </ul>
         </div>
         <div class="slider-image"></div>
+        </div>
       </section>
+      <div class="container">
       <section class="features clearfix">
-        <div class="features-item">
-          <b class="features-item-name">Веб-сайты</b> <!-- ЭТО ЛУЧШЕ ВСЕГО СДЕЛАТЬ H2!!!! -->
+        <div class="features-item websites">
+          <h2>Веб-сайты</h2> <!-- ЭТО ЛУЧШЕ ВСЕГО СДЕЛАТЬ H2!!!! -->
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="features-item-btn red">Заказать</a>
+          <a class="btn" href="#">Заказать</a>
         </div>
-        <div class="features-item">
-          <b class="features-item-name">Приложения</b>
+        <div class="features-item apps">
+          <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="features-item-btn green">Заказать</a>
+          <a class="btn features-item-green" href="#">Заказать</a>
         </div>
-        <div class="features-item">
-          <b class="features-item-name">Презентации</b>
+        <div class="features-item presentations">
+          <h2>Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="features-item-btn yellow">Заказать</a> <!-- PROBABLY BETTER START NAME LIKE "BTN features.... !!!" -->
+          <a class="btn features-item-yellow" href="#">Заказать</a> <!-- PROBABLY BETTER START NAME LIKE "BTN features.... !!!" -->
         </div>
       </section>
+      <hr>
       <section class="about clearfix">
         <div class="about-left">
-          <h2 class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2> <!-- А ВОТ ТУТ ВООБЩЕ p>b лучше всего ТАК!!! -->
+          <p><b class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p> <!-- А ВОТ ТУТ ВООБЩЕ p>b лучше всего ТАК!!! -->
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="about-subtitle">Выполняем заказы на разработку:</p>
           <ul>
@@ -77,7 +83,7 @@
           </ul>
         </div>
         <div class="about-right">
-          <p class="about-sublogo">Since 2014</p>
+          <p class="about-sublogo">Since 2004</p>
           <p class="about-subtitle">Как мы работаем:</p>
           <ul>
             <li>С самоотдачей 146%</li>
@@ -86,34 +92,38 @@
           </ul>
         </div>        
       </section>
+      <hr>
       <section class="clients clearfix">
         <div class="client client1"></div>
         <div class="client client2"></div>
         <div class="client client3"></div>  
+        <hr>
       </section>
+      </div>
       </main>
     <footer>
       <section class="map clearfix">
         <div class="container">
           <div class="map-contacts">
             <b class="map-contacts-firm">Nёrds design studio</b>
-            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
-          
-          тел. +7 (812) 275-75-75</p>
-            <a class="map-contacts-btn">Напишите нам</a>
+            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="map-contacts-address">тел. +7 (812) 275-75-75</p>
+            <a class="btn map-contacts-btn" href="#">Напишите нам</a>
           </div>
           <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
         </div>
       </section>     
-      <div class="container clearfix">
-        <div class="footer-social">
-          <a class="footer-social-btn vk" href="#"></a>
-          <a class="footer-social-btn fb" href="#"></a>
-          <a class="footer-social-btn ig" href="#"></a>
-        </div>
-        <div class="footer-text">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="container">
+        <div class="footer-lower clearfix">
+          <div class="footer-social">
+            <a class="footer-social-btn vk" href="#"></a>
+            <a class="footer-social-btn fb" href="#"></a>
+            <a class="footer-social-btn ig" href="#"></a>
+          </div>
+          <div class="footer-text">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </div>
     </footer>

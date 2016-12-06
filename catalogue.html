@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -32,103 +34,135 @@
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
       <section class="welcome"> <!-- НАВЕРНОЕ МОЖНО БЫЛО В ХЭДЕР-->
+       <div class="container">
         <h1 class="welcome-title">Добро пожаловать в магазин готовых макетов</h1>
+        </div>
       </section>
+      <div class="container">
       <section class="shop clearfix"> <!-- нужно!!!-->
         <section class="shop-parameters">
-          <form action="" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
-            <p class="shop-parameters-name"></p>
             <div class="price-range_double"></div> <!-- говорят что проще всего это сделать DIV а там типа уже фронтэндер пусть морочится и делает двойной пойнтер етц!! RANGE НЕ СТИЛИЗУЕТСЯ ПОЭТОМУ НАМНОГО ПРОЩЕ СДЕЛАТЬ ПОКА ВВОД ТОЛЬКО ИНПУТОМ!!! но можно искать и чото врубать типа https://leaverou.github.io/multirange/ наверное -->
-            <label>От <input type="text" name="price-from" value="0"></label> - 
+            <div class="price-range_inputs">
+            <label>От <input type="text" name="price-from" value="0"></label> 
             <label>До <input type="text" name="price-from" value="1500"></label>
+            </div>
             </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
-              <input type="radio" name="type" value="responsive" checked> Адаптивная<br> <!-- LABEL СЮДА НАДА!!! -->
-              <input type="radio" name="type" value="fixed"> Фиксированная<br>
-              <input type="radio" name="type" value="adaptive"> Резиновая
+              <input type="radio" name="type" id="responsive" value="responsive" checked><label class="shop-parameters-list for-radio" for="responsive">Адаптивная</label><br> <!-- LABEL СЮДА НАДА!!! -->
+              <input type="radio" name="type" id="fixed" value="fixed"><label class="shop-parameters-list for-radio" for="fixed">Фиксированная</label><br>
+              <input type="radio" name="type" id="adaptive" value="adaptive"><label class="shop-parameters-list for-radio" for="adaptive">Резиновая</label>
             </fieldset>
             <fieldset>
             <legend>Особенности:</legend>
-              <input type="checkbox" name="feature1" value="slider" checked>Слайдер<br>
-              <input type="checkbox" name="feature2" value="features_list">Блок преимуществ<br>
-              <input type="checkbox" name="feature3" value="news" checked>Новости<br>
-              <input type="checkbox" name="feature4" value="gallery">Галерея<br>
-              <input type="checkbox" name="feature5" value="cart">Корзина<br>
+              <input type="checkbox" name="feature1" id="slider" value="slider" checked><label for="slider" class="shop-parameters-list for-cb">Слайдер</label><br>
+              <input type="checkbox" name="feature2" id="features_list" value="features_list"><label for="features_list" class="shop-parameters-list for-cb">Блок преимуществ</label><br>
+              <input type="checkbox" name="feature3" id="news" value="news" checked><label for="news" class="shop-parameters-list for-cb">Новости</label><br>
+              <input type="checkbox" name="feature4" id="gallery" value="gallery"><label for="gallery" class="shop-parameters-list for-cb">Галерея</label><br>
+              <input type="checkbox" name="feature5" id="cart" value="cart"><label for="cart" class="shop-parameters-list for-cb">Корзина</label><br>
             </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" class="btn">Показать</button>
           </form>
         </section>
         <section class="shop-results">
           <div class="shop-results-sort">
-            <p class="shop-results-text">Сортировать:</p>
-            <ul>
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
-            </ul>
-            <a class="shop-results-sort desc" href="#"></a>
-            <a class="shop-results-sort asc" href="#"></a>
+            <span>Сортировать:</span>
+             <a class="shop-results-sort_txt" href="#">По цене</a>
+             <a class="shop-results-sort_txt" href="#">По типу</a>
+             <a class="shop-results-sort_txt" href="#">По функционалу</a>
+            <a class="shop-results-sort_btn desc" href="#"></a>
+            <a class="shop-results-sort_btn asc" href="#"></a>
           </div>
           <div class="shop-results-images clearfix">
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details"></div>
-           </div>
-           <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details highlighted_res">
-               <b class="shop-results-images-item-details-name">Sunset</b>
-               <p>Интернет-магазин с личным кабинетом</p>
-               <a class="shop-results-images-item-details-price" href="#">10000 Р.</a>
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website1.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details">
+                 <b>Aviator</b>
+                 <p>Одностраничный макет с авторским дизайном</p>
+                 <a class="btn price" href="#">8000 Р.</a>                 
+               </div>
              </div>
            </div>
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details"></div>
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website2.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details highlighted_res">              
+                 <b>Sunset</b>
+                 <p>Интернет-магазин с личным кабинетом</p>
+                 <a class="btn price" href="#">10000 Р.</a>
+               </div>
+             </div>
            </div>
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details"></div>
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website3.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details"></div>
+             </div>
            </div>
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details"></div>
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website4.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details"></div>
+             </div>
            </div>
            <div class="shop-results-images-item">
-             <div class="shop-results-images-item-details"></div>
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website5.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details"></div>
+             </div>
+           </div>
+           <div class="shop-results-images-item">
+             <div class="shop-results-images-item_upframe"><div class="round"></div><div class="round"></div><div class="round"></div></div>
+             <img src="img/website6.jpg" alt="" width="240" height="240">
+             <div class="shop-results-images-item_preview">
+               <div class="shop-results-images-item-details"></div>
+             </div>
            </div>                                                      
           </div>
           <div class="shop-results-pages">
-            <a href="#">1</a>
+            <a class="current" href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">Следующая</a>
           </div>
         </section>
       </section>
+      </div>
     </main>
     <footer>
       <section class="map clearfix">
         <div class="container">
           <div class="map-contacts">
             <b class="map-contacts-firm">Nёrds design studio</b>
-            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><br>
-          
-          тел. +7 (812) 275-75-75</p>
-            <a class="map-contacts-btn">Напишите нам</a>
+            <p class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="map-contacts-address">тел. +7 (812) 275-75-75</p>
+            <a class="btn map-contacts-btn" href="#">Напишите нам</a>
           </div>
           <div class="map-pointer"></div> <!-- НУЖЕН ТУТ ЛИ ОН?? -->
         </div>
-      </section>        
+      </section>     
       <div class="container">
-        <div class="footer-social">
-          <a class="footer-social-btn vk" href="#"></a>
-          <a class="footer-social-btn fb" href="#"></a>
-          <a class="footer-social-btn ig" href="#"></a>
-        </div>
-        <div class="footer-text">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+        <div class="footer-lower clearfix">
+          <div class="footer-social">
+            <a class="footer-social-btn vk" href="#"></a>
+            <a class="footer-social-btn fb" href="#"></a>
+            <a class="footer-social-btn ig" href="#"></a>
+          </div>
+          <div class="footer-text">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </div>
     </footer>
