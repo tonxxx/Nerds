@@ -168,14 +168,14 @@ header {
   box-sizing: border-box;
   min-height: 349px;
   padding-top: 50px;
-  padding-bottom: 68px;
+  
   margin-bottom: 82px;
   background: #eeeeee;
 }
 
 .slider-text {
   float: left;
-  width: 400px;
+  width: 470px;
 }
 
 .slider-text p {
@@ -184,12 +184,12 @@ header {
 }
 
 .slider-nav {
-  float: left;
+  float: right;
   width: 70px;
 }
 
 .slider-nav ul {
-  margin-top: 197px;
+  padding-top: 197px;
   padding: 0;
   list-style: none;
   font-size: 0;
@@ -213,7 +213,10 @@ header {
   background: white;
 }
 
-.slider-nav input[type="radio"]:checked + label::after {
+#page1:checked ~ .slider label[for="page1"]::after,
+#page2:checked ~ .slider label[for="page2"]::after,
+#page3:checked ~ .slider label[for="page3"]::after
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -230,20 +233,70 @@ header {
   background: #c3c3c3;  
 }
 
-.slider-nav input[type='radio'] {
+
+input[type="radio"] {
   display: none;
 }
+
+
+#page1:checked ~ .slider #title1,
+#page1:checked ~ .slider #text1,
+#page2:checked ~ .slider #title2,
+#page2:checked ~ .slider #text2,
+#page3:checked ~ .slider #title3,
+#page3:checked ~ .slider #text3 {
+  display: block;
+}
+
+#page1:checked ~ .slider #button1,
+#page2:checked ~ .slider #button2,
+#page3:checked ~ .slider #button3 {
+  display: inline-block;
+}
+
+
+
+#page1:checked ~ .slider #title2,
+#page1:checked ~ .slider #text2,
+#page1:checked ~ .slider #button2,
+#page1:checked ~ .slider #title3,
+#page1:checked ~ .slider #text3,
+#page1:checked ~ .slider #button3,
+#page2:checked ~ .slider #title1,
+#page2:checked ~ .slider #text1,
+#page2:checked ~ .slider #button1,
+#page2:checked ~ .slider #title3,
+#page2:checked ~ .slider #text3,
+#page2:checked ~ .slider #button3,
+#page3:checked ~ .slider #title1,
+#page3:checked ~ .slider #text1,
+#page3:checked ~ .slider #button1,
+#page3:checked ~ .slider #title2,
+#page3:checked ~ .slider #text2,
+#page3:checked ~ .slider #button2 {
+  display: none;
+}
+
 
 .slider-image {
   float: left;
   width: 410px;
-  height: 231px;
+  height: 319px;
     
-  background: url("../img/slider1.png") no-repeat center right;
+  background: url("../img/slider1.png") no-repeat top center;
 }
 
+#page1:checked ~ .slider .slider-image {
+  background-image: url(../img/slider1.png);
+}
 
+#page2:checked ~ .slider .slider-image {
+  background-image: url(../img/slider2.png);
+}
 
+#page3:checked ~ .slider .slider-image {
+  background-image: url(../img/slider3.png);
+}
 
 
 

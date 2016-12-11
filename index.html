@@ -36,21 +36,30 @@
       </div>
     </header>
     <main>
+      <input type="radio" name="page" id="page1" checked>
+      <input type="radio" name="page" id="page2">
+      <input type="radio" name="page" id="page3">
       <section class="slider clearfix">
         <div class="container">
           <div class="slider-text">
-            <h1 class="slider-text-title">Долго, дорого, скрупулезно.</h1>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a class="btn slider-more" href="#">Узнать больше</a>
-          </div>
-          <div class="slider-nav">
+            <h1 class="slider-text-title" id="title1">Долго, дорого, скрупулезно.</h1>
+            <h1 class="slider-text-title" id="title2">Любите ли вы математику, как любим ее мы?</h1>
+            <h1 class="slider-text-title" id="title3">Только наркотики, только хардкор!</h1>
+            <p id="text1">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <p id="text2">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+            <p id="text3">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+            <a class="btn slider-more" id="button1" href="#">Узнать больше</a>
+            <a class="btn slider-more" id="button2" href="##">Узнать больше</a>
+            <a class="btn slider-more" id="button3" href="###">Узнать больше</a>
+            <div class="slider-nav">
             <ul>
-              <li><input type="radio" name="page" id="page1" checked><label for="page1"></label></li><!-- HOW TO MAKE IT CHANGE DAMN BACKGROUND FROM HERE??? -->
-              <li><input type="radio" name="page" id="page2"><label for="page2"></label></li>
-              <li><input type="radio" name="page" id="page3"><label for="page3"></label></li>
+              <li><label for="page1"></label></li><!-- IT'S IMPOSSIBLE TO CHANGE DAMN BACKGROUND FROM HERE w/o JAVASCRIPT BECAUSE OF SELECTORS LOGIC!!!!!!!! -->
+              <li><label for="page2"></label></li>
+              <li><label for="page3"></label></li>
             </ul>
         </div>
-        <div class="slider-image"></div>
+          </div>
+        <div class="slider-image" id="pic1"></div>
         </div>
       </section>
       <div class="container">
