@@ -121,7 +121,7 @@ header {
   height: 15px;
   
   content: ""; 
-  background: url(img/sprite.png);
+  background: url("../img/sprite.png");
   background-position: 0px -90px;
 }
 
@@ -147,6 +147,14 @@ header {
   line-height: 30px;
   color: inherit;
 }
+
+.main-nav .current_page {
+  text-decoration: underline;
+  border-bottom: 2px solid #fb565a;
+}
+
+
+
 
 .slider-more {
   padding-left: 70px;
@@ -232,7 +240,7 @@ header {
   width: 410px;
   height: 231px;
     
-  background: url("img/slider1.png") no-repeat center right;
+  background: url("../img/slider1.png") no-repeat center right;
 }
 
 
@@ -260,15 +268,15 @@ header {
 }
 
 .websites {
-  background: url(img/feature1.png) no-repeat top left;
+  background: url("../img/feature1.png") no-repeat top left;
 }
 
 .apps {
-  background: url(img/feature2.png) no-repeat top left;
+  background: url("../img/feature2.png") no-repeat top left;
 }
 
 .presentations {
-  background: url(img/feature3.png) no-repeat top left;
+  background: url("../img/feature3.png") no-repeat top left;
 }
 
 .features-item p {
@@ -396,7 +404,7 @@ header {
   float: left;
   width: 260px;
   padding-top: 94px;
-  background: url(img/logo-bigger.png) no-repeat top center;
+  background: url("../img/logo-bigger.png") no-repeat top center;
 }
 
 .about-sublogo {
@@ -449,32 +457,32 @@ header {
 
 .client1 {
   width: 220px;
-  background: white url("img/client1_inactive.png") no-repeat center;
+  background: white url("../img/client1_inactive.png") no-repeat center;
 }
 
 .client2 {
   width: 420px;
-  background: white url("img/client2_inactive.png") no-repeat center;
+  background: white url("../img/client2_inactive.png") no-repeat center;
 }
 
 .client3 {
   width: 240px;
-  background: white url("img/client3_inactive.png") no-repeat center;
+  background: white url("../img/client3_inactive.png") no-repeat center;
 }
 
 .client1:hover,
 .client1:active {
-  background: url("img/client1_active.png") no-repeat center;
+  background: url("../img/client1_active.png") no-repeat center;
 }
 
 .client2:hover,
 .client2:active {
-  background: url("img/client2_active.png") no-repeat center;
+  background: url("../img/client2_active.png") no-repeat center;
 }
 
 .client3:hover,
 .client3:active {
-  background: url("img/client3_active.png") no-repeat center;
+  background: url("../img/client3_active.png") no-repeat center;
 }
 
 
@@ -882,7 +890,7 @@ header {
 
 
 .map {
-  background: #e9e5dc url("img/map.png") no-repeat center;
+  background: #e9e5dc url("../img/map.png") no-repeat center;
   min-height: 417px;
 }
 
@@ -920,7 +928,7 @@ header {
   height: 190px;
   margin-right: 20px;
   margin-top: 110px;
-  background: url("img/map-pointer.png") no-repeat right;
+  background: url("../img/map-pointer.png") no-repeat right;
 }
 
 .footer-lower {
@@ -947,15 +955,15 @@ header {
 }
 
 .vk {
-  background: #e1e1e1 url(img/sprite.png) no-repeat 15px -215px;
+  background: #e1e1e1 url("../img/sprite.png") no-repeat 15px -215px;
 }
 
 .fb {
-  background: #e1e1e1 url(img/sprite.png) no-repeat 22px -116px;
+  background: #e1e1e1 url("../img/sprite.png") no-repeat 22px -116px;
 }
 
 .ig {
-  background: #e1e1e1 url(img/sprite.png) no-repeat 20px -169px;
+  background: #e1e1e1 url("../img/sprite.png") no-repeat 20px -169px;
 }
 
 .footer-social-btn:hover {
